@@ -1,0 +1,10 @@
+com\dbs\trproject\backend\repo\DangerListRepository.class
+com\dbs\trproject\backend\controller\BackendController.class
+com\dbs\trproject\backend\service\BackendService.class
+com\dbs\trproject\backend\config\ApiSecurityConfiguration.class
+com\dbs\trproject\backend\model\Account.class
+com\dbs\trproject\backend\model\DangerList.class
+com\dbs\trproject\backend\YcBackendApplication.class
+com\dbs\trproject\backend\repo\AccountRepository.class
+com\dbs\trproject\backend\repo\TransactionRepository.class
+com\dbs\trproject\backend\model\Transaction.class
