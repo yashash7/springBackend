@@ -38,7 +38,6 @@ public class ApiSecurityConfiguration extends WebSecurityConfigurerAdapter {
 		.and()
 		.headers().frameOptions().disable()
 		.and()
-		.cors().disable()
 		.formLogin();
 	}
 	
