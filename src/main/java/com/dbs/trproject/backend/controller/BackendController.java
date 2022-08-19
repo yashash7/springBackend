@@ -10,14 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dbs.trproject.backend.model.Account;
-import com.dbs.trproject.backend.service.BackendService;
+import com.dbs.trproject.backend.service.JPASecService;
 
 @RestController
 public class BackendController {
 	
 	@Autowired
-	BackendService service;
+	JPASecService service;
 	
 	@RequestMapping("/home")
 	public String home() {

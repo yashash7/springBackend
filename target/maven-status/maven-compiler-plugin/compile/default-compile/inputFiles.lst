@@ -1,10 +1,7 @@
-C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\service\BackendService.java
-C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\model\Account.java
 C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\config\ApiSecurityConfiguration.java
-C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\repo\AccountRepository.java
-C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\repo\DangerListRepository.java
-C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\model\Transaction.java
+C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\service\JPASecService.java
 C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\controller\BackendController.java
-C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\model\DangerList.java
+C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\service\DetailsService.java
+C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\repo\SecRepo.java
 C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\YcBackendApplication.java
-C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\repo\TransactionRepository.java
+C:\Users\Administrator\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\YcBackend\src\main\java\com\dbs\trproject\backend\model\User.java

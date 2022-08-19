@@ -1,5 +1,6 @@
 package com.dbs.trproject.backend.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -9,22 +10,32 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.dbs.trproject.backend.service.DetailsService;
+import com.dbs.trproject.backend.service.JPASecService;
+
 @Configuration
 @EnableWebSecurity
 public class ApiSecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
+	@Autowired
+	JPASecService service;
 	/* Authentication */
-	// In Memory Auth
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication()
+		
+		//JPA Auth
+		auth.userDetailsService(service);
+		
+		
+		// In Memory Auth
+		/*auth.inMemoryAuthentication()
 		.withUser("admin")
 		.password("Admin")
 		.roles("ADMIN")
 		.and()
 		.withUser("yck")
 		.password("Password")
-		.roles("USER");
+		.roles("USER");*/
 	}
 	
 	/* Authorization */
@@ -33,7 +44,7 @@ public class ApiSecurityConfiguration extends WebSecurityConfigurerAdapter {
 		http.httpBasic()
 		.and()
 		.authorizeRequests()
-		.antMatchers("/get", "/post", "/put", "delete", "/dashboard").hasAnyRole("ADMIN", "USER")
+		.antMatchers("/get", "/post", "/put", "delete", "/dashboard").hasAnyAuthority("ADMIN", "USER")
 		.antMatchers("/home").permitAll()
 		.and()
 		.headers().frameOptions().disable()
